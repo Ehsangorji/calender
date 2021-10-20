@@ -1,0 +1,29 @@
+.text{
+    padding: 3vh ;
+    font-family: "Vazir-Thin";
+    width: 98%;
+    border: 1px solid gray;
+    border-radius:4px;
+    margin: 13px 0 0 0;
+}
+.SearchArea{
+    background-color: rgb(175, 175, 175); 
+    
+    /* height:50vh ; */
+    padding: 1em;
+}
+.Select{
+    padding: 3vh ;
+    font-family: "Vazir-Thin";
+    width: 98%;
+    border: 1px solid gray;
+    border-radius:4px;
+    margin: 13px 0 0 0;
+}
+.Check{
+    font-family: "Vazir-bold";
+    font-size: medium;
+}
+.Radiobt{
+    display: block;
+}

@@ -1,0 +1,19 @@
+.CalContainer {
+  display: flex;
+}
+
+.Main {
+  justify-content: flex-start;
+  width: 96.5%;
+  text-align: left;
+  /* overflow-y: scroll; */
+}
+.Sidebar {
+  justify-content: flex-end;
+  width: 3.5%;
+  text-align: right;
+}
+
+.CalContainer > div {
+  margin-top: 64px;
+}

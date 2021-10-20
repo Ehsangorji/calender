@@ -1,5 +1,18 @@
-.App {
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+/* .App {
   text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-family: "Vazir-Thin";
 }
 
 .App-logo {
@@ -35,4 +48,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

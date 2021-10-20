@@ -1,0 +1,58 @@
+/* button { */
+/* remove default behavior */
+/* appearance: none;
+  -webkit-appearance: none; */
+
+/* usual styles */
+/* padding: 10px;
+  border: none;
+
+  color: #fff;
+  font-weight: 600;
+  background-color: black;
+  border-radius: 5px;
+  width: 100%;
+} */
+.ButtonContainer {
+  padding-left: 1em;
+  display: flex;
+  direction: rtl;
+  justify-content: center;
+}
+.ButtonStyle {
+  /* margin: 8px 8px; */
+  margin:1em;
+  margin-left: 20px;
+  padding: 18px 38px;
+  font-family: "Vazir-bold";
+  /* width: 15vw;  */
+}
+.searchButtonContainer{
+  padding-left: 1em;
+  display: flex;
+  direction: rtl;
+  justify-content: center;
+}
+.searchButtonStyle{
+  margin:1em;
+  margin-left: 30px;
+  padding: 12px 30px;
+  font-family: "Vazir-bold";
+  /* width: 15vw;  */
+}
+.submit{
+  background-color: purple;
+  color: white;
+  font-size: 18px;
+}
+.Dark {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.Light {
+  background-color: white;
+  font-size: 18px;
+  color: rgb(172, 39, 172);
+  border: 2px solid rgb(172, 39, 172);
+}

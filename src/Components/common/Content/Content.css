@@ -1,0 +1,84 @@
+.ContentContainer {
+  width: 80%;
+  display: flex;
+  direction: rtl;
+}
+.ContentContainer > div {
+  font-size: 4vh;
+  /* margin: 0.1em 1em 0 0;*/
+   padding-right: .5em; 
+   padding-left: .5em; 
+  border-radius: 3px;
+  width: 100%;
+}
+.RowContainer {
+  display: flex;
+  justify-content: center;
+}
+.HeadContainer {
+  display: inline-block;
+  font-family: "Vazir-Thin";
+  display: flex;
+  direction: rtl;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* height: 20vh; */
+}
+.title {
+}
+.help {
+  font-size: small;
+}
+
+
+.formLine{
+  /* margin-right: 1em; */
+  width: 49%;
+  display: inline-block;
+}
+.formLine .text{
+  width: 90%;
+  margin-bottom: 1.5em;
+}
+
+.InputSmall { 
+  margin-left: 1em;
+  width: 22% !important;
+}
+
+/**Desktop Query***************************************************************/
+@media only screen and (min-width: 768px) {
+  .ContentContainer {
+    width: 80%;
+    
+  }
+}
+
+/*Tablet Query*****************************************************************/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  .ContentContainer {
+    width: 100%;
+  }
+  .formLine{
+    /* margin-right: 1em; */
+    width: 49%;
+    display: inline-block;
+  }
+  .formLine .text{
+    width: 90%;
+    margin-bottom: 1.5em;
+  }
+}
+/*Mobile Query***************************************************************/
+@media only screen and (max-width:480px) {
+  .ContentContainer {
+    width: 100%;
+  }
+  .formLine{
+    width: 40%;
+  }
+  .formLine .text{
+    width: 40%;
+  }
+}

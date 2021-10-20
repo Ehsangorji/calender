@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import './fonts/Vazir.woff';
+import './fonts/Vazir-Bold.woff';
+import './fonts/Vazir-Thin.woff';
+import './fonts/Vazir2.woff2';
 ReactDOM.render(
   <React.StrictMode>
     <App />

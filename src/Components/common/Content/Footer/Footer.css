@@ -1,0 +1,64 @@
+.Footer-container {
+  font-family: 'vazir-thin';
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border-bottom: 1px solid gray;
+  text-align: right;
+  padding: 13px;
+  font-size: 18px;
+}
+
+th {
+  
+  background-color: gray;
+  color: #ffffff;
+}
+
+td {
+  background-color: rgb(241, 241, 241);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+form * {
+  font-size: 28px;
+}
+
+/* .FooterArea{
+  
+    background-color: rgb(182, 182, 182);
+    width: 100%; 
+    text-align: center;
+    font-family: "vazir-thin";
+    font-size: 15px;
+    border-collapse: collapse; 
+}
+#FooterArea td, #FooterArea th {
+    /* border: 1px solid #ddd; */
+/* padding: 1em;
+  }
+  #FooterArea tr:hover {background-color: #ddd;}
+  #FooterArea th {
+    width: 100%;
+    padding: 12px;
+    /* padding-bottom: 12px; */
+/* text-align: right;
+    background-color: rgb(182, 182, 182);
+    color: white;
+  } */
