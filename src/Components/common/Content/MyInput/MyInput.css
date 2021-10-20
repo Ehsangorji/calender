@@ -3,11 +3,11 @@
     font-family: "Vazir-Thin";
     width: 98%;
     border: 1px solid gray;
-    border-radius:4px;
+    /* border-radius:4px; */
     margin: 13px 0 0 0;
 }
 .SearchArea{
-    background-color: rgb(175, 175, 175); 
+    background-color: rgb(211, 212, 212); 
     
     /* height:50vh ; */
     padding: 1em;
@@ -27,3 +27,8 @@
 .Radiobt{
     display: block;
 }
+.Radiobt label{
+    padding-right: .5em;
+    font-size: small; 
+}
+

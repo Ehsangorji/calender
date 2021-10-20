@@ -20,12 +20,12 @@
   justify-content: center;
 }
 .ButtonStyle {
-  /* margin: 8px 8px; */
+  border-radius: 5px;
   margin:1em;
   margin-left: 20px;
-  padding: 18px 38px;
+  padding: 15px 38px;
   font-family: "Vazir-bold";
-  /* width: 15vw;  */
+   width: 27vw;  
 }
 .searchButtonContainer{
   padding-left: 1em;
@@ -38,7 +38,8 @@
   margin-left: 30px;
   padding: 12px 30px;
   font-family: "Vazir-bold";
-  /* width: 15vw;  */
+  width: 13vw;  
+  border-radius: 5px;
 }
 .submit{
   background-color: purple;

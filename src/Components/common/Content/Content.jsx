@@ -1,4 +1,4 @@
-import React from "react";
+import React , {Component} from "react";
 import "./Content.css";
 import InputTextBox from "./InputTextBox/InputTextBox";
 import DropDownBox from "./DropDownBox/DropDownBox";
@@ -8,9 +8,23 @@ import Button from "./Button/Button";
 import MyInput from "./MyInput/MyInput";
 import Footer from "./Footer/Footer";
 
-// import listIcon from '../../Icons/list.png';
+import dropIcon from '../../../Icons/drop1.png';
 
-const Content = () => {
+class Content extends Component{
+  constructor(props) {
+    super(props);
+
+    this.state={
+       flag:false,
+    }
+
+  }
+  searchDisplay=()=>{
+    this.setState({flag: !this.state.flag })
+  }
+  render(){
+
+  
   const myForm =[
     {name:"isEdu1" , type:"select" , label:"CMSنوع  " , options:["نوع CMS", "فوق" ,"لیسانس"]},
     {name:"isEdu2" , type:"select" , label:"نوع صفحه CMS" , options:["نوع صفحه CMS", "فوق" ,"لیسانس"]},
@@ -69,6 +83,8 @@ return(
 })
 //___________________________________________________________________________ 
 
+ 
+  
   return (
     <div className="ContentContainer">
       <div className="form">
@@ -77,9 +93,9 @@ return(
           <div className="title">CMS مدیریت</div>
           <div className="help">راهنما  </div>
         </div>
-        
+
         {myFormJSX}
-        
+
         <div className="ButtonContainer">
           <Button className="ButtonStyle Dark" value="بازنشانی"></Button>
           <Button
@@ -88,20 +104,30 @@ return(
           ></Button>
         </div>
 
+
         <div className="SearchArea">
-        {SearchFormJSX}
-        <div className="searchButtonContainer">
-          <Button className="searchButtonStyle Dark" value="بازنشانی"></Button>
-          <Button
-            className="searchButtonStyle submit"
-            value="جستجو"
-          ></Button>
+          <div className="clickSearch "  >
+           <label className="font-style " onClick ={this.searchDisplay}>جستجو</label>
+           <image src={dropIcon} />
+            <div className={  this.state.flag ? "hidden" :""} > 
+              {SearchFormJSX}
+                <div className="searchButtonContainer">
+                  <Button 
+                    className="searchButtonStyle Dark" 
+                    value="بازنشانی">
+                  </Button>
+                  <Button
+                    className="searchButtonStyle submit"
+                    value="جستجو">
+                  </Button>
+                </div>
+            </div>
+          </div>
         </div>
-        </div>
-        <Footer/>
-      </div>
+      <Footer/>
     </div>
-  );
-};
+  </div>
+);
+}}
 
 export default Content;

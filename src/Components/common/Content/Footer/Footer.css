@@ -18,12 +18,15 @@ td {
 
 th {
   
-  background-color: gray;
-  color: #ffffff;
+  background-color: rgb(211, 212, 212);
+  color: #5e5e5e;
+  font-size:20px;
 }
 
 td {
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(253, 253, 253);
+  color: #5e5e5e;
+  font-weight:bold;
 }
 
 form {

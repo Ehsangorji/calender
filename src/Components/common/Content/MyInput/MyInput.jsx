@@ -14,11 +14,12 @@ const MyInput = (props) => {
     // console.log(itm);
     radioDetailJSX.push(
       <div className="formLine Radiobt">
-        <label>{itm}</label>
+        
         <input name="myradio"
          
           type="radio">
-        </input>  
+        </input> 
+        <label>{itm}</label> 
       </div>
     );
    
@@ -49,10 +50,11 @@ const MyInput = (props) => {
       return(
         
       <div >
-        <label className="Check">{props.label}</label>
+       
         <input 
           type={props.type}>
         </input>
+         <label className="Check">{props.label}</label>
       </div>
       );
       break;
