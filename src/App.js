@@ -6,6 +6,7 @@ import SideMenu1 from './Components/common/SideMenu1/SideMenu1';
 import Content from './Components/common/Content/Content';
 import React, { Component } from 'react';
 import Footer from './Components/common/Content/Footer/Footer';
+import Arrayfunctions from './Components/Arrayfunctions/Arrayfunctions';
 // import CalMenu from './Components/calMenu/calMenu';
 // import CalContainer from './Components/CalContainer/CalContainer';
 class App extends Component {
@@ -13,10 +14,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <DonyaroMenu />
+        {/* <DonyaroMenu />
         <SideMenu1 />
-        <Content />
-
+        <Content /> */}
+        <Arrayfunctions />
         {/*
          <CalMenu/>
          <CalContainer/>

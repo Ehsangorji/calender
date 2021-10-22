@@ -1,9 +1,9 @@
 .menu {
   width: 100%;
-  height: 7vh;
+  height: 6vh;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  /* justify-content: space-between;  */
   background-image: linear-gradient(to right, purple 55%, red);
 }
 .Iricon{
@@ -15,4 +15,9 @@
   font-size: 60%;
   font-family: "vazir-bold";
   color: white;
+}
+
+.lang{
+display: flex;
+align-items:center;
 }
