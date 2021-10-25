@@ -21,7 +21,7 @@ padding: 15px 35px;
 /**Desktop Query*/
 @media only screen and (min-width: 768px) {
   .sideMenuContainer {
-      height: 284vh;
+      height: 315vh;
   }
 }
 

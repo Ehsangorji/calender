@@ -3,8 +3,13 @@
   height: 6vh;
   display: flex;
   align-items: center;
-  /* justify-content: space-between;  */
+   justify-content: space-between;  
   background-image: linear-gradient(to right, purple 55%, red);
+}
+.user-icon{
+  width: .9em;
+  height: .9em;
+  padding-left: .4em;
 }
 .Iricon{
  width: 2vw;
@@ -12,12 +17,56 @@
  padding-left: 1vw;
 }
 .donyaro-logo{
-  font-size: 60%;
+  font-size:100%;
   font-family: "vazir-bold";
   color: white;
+}
+.email-logo{
+  font-size: 100%;
+  font-family: "vazir-bold";
+  color: white;
+  padding-right: 45vw;
 }
 
 .lang{
 display: flex;
 align-items:center;
+justify-content: flex-start;
+}
+.lang-logo{
+  font-size: 15px;
+  font-family: "vazir-bold";
+  color: white;
+}
+/**Desktop Query***************************************************************/
+@media only screen and (min-width: 768px) {
+
+  }
+
+
+/*Tablet Query*****************************************************************/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  .email-logo{
+    font-size: 70%;
+    padding-right: 5vw;
+  }
+  .lang-logo{
+    font-size: 60%;
+  }
+  .donyaro-logo{
+    font-size:80%;
+  }
+}
+/*Mobile Query***************************************************************/
+@media only screen and (max-width:480px) {
+  .email-logo{
+    font-size: 50%;
+    padding-right: 2vw;
+  }
+  .lang-logo{
+    font-size: 25%;
+  }
+  .donyaro-logo{
+    font-size:50%;
+  }
 }

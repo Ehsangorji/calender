@@ -90,7 +90,7 @@ return(
       <div className="form">
         
         <div className="HeadContainer">
-          <div className="title">CMS مدیریت</div>
+          <div className="title"> مدیریت CMS</div>
           <div className="help">راهنما  </div>
         </div>
 

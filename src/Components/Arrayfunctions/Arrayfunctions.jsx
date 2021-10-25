@@ -50,14 +50,14 @@ export class Arrayfunctions extends Component {
         }
         let result = '';
         if(found){
-            result='found';
+            result='some : found';
         }
         else{
-            result='not found!';
+            result='some : not found!';
         }
-        this.setState({
-            result : result,
-        });
+         this.setState({
+             result : result,
+         });
     }
 // --------------------------------------------------------------------  
 everyArray=()=>{
@@ -68,10 +68,10 @@ everyArray=()=>{
     }
     let result = '';
     if(found){
-        result='everyfound';
+        result='every is true';
     }
     else{
-        result='every not found!';
+        result='every is false';
     } 
     this.setState({
         result : result,
@@ -86,7 +86,7 @@ findIndexArray=()=>{
     }
     let result = '';
     if(found){
-        result='found :' + this.state.tempVal;
+        result='index number :' + found;
     }
     else{
         result='findIndexArray not found!';
@@ -104,15 +104,16 @@ indexofArray=()=>{
     }
     let result = '';
     if(found){
-        result='indexof found :' + this.state.tempVal;
+        result='indexof found :' + found;
     }
     else{
-        result='indexofArray not found!';
+        result='index of Array not found!';
     } 
     this.setState({
         result : result,
     });
 }
+// -------------------------------------------------------------------- 
 filterArray=()=>{
     let newArr= [...this.state.myArray];
     let found ='';
@@ -121,7 +122,7 @@ filterArray=()=>{
     }
     let result = '';
     if(found){
-        result='filter found :' + this.state.tempVal;
+        result='filter found : [' + found + " ] " ;
     }
     else{
         result='filter not found!';
@@ -130,55 +131,70 @@ filterArray=()=>{
         result : result,
     });
 }
+// -------------------------------------------------------------------- 
     render() {
         return (
+        <div>    
              <div  className="holder">
                 <input
                     className="labelstyl" 
+                    placeholder=" Enter Array items"
                     onChange={e => this.setState({value: e.target.value})}
                 />
                 <br/>
                 {this.state.myArray.join(" , ")}
                 <br/>
-                <input type="submit" value="Fill"
+                <input className="substyle"
+                type="submit" 
+                value="Fill"
                 onClick={this.fillArray} />
                 <br/>
                 <input
                     value={this.state.tempVal}
                     onChange={e => this.setState({tempVal: e.target.value})}
                 />
+                
+                <div className="resultShow">
+                   {this.state.result} 
+                </div>
 
-                <input type="submit" value="Find"
+            </div>
+            <div className="holder2">
+                <input type="submit"
+                 classname="inp" 
+                 className="substyle-inp"
+                 value="Find"
                     onClick={this.findArray} 
                 />
-                {this.state.result}
+                
                 <br/>
-                <input type="submit" value="some"
+                <input type="submit" className="substyle-inp" value="some"
                     onClick={this.someArray} 
                 />
-                {this.state.result}
+                
                 <br/>
-                <input type="submit" value="every"
+                <input type="submit" className="substyle-inp" value="every"
                     onClick={this.everyArray} 
                 />
-                {this.state.result}
+                
                 <br/>
-                <input type="submit" value="findIndex"
+                <input type="submit" className="substyle-inp" value="findIndex"
                     onClick={this.findIndexArray} 
                 />
-                {this.state.result}
+                
                 <br/>
-                <input type="submit" value="indexof"
+                <input type="submit" className="substyle-inp" value="indexof"
                     onClick={this.indexofArray} 
                 />
-                {this.state.result}
+                
                 <br/>
-                <input type="submit" value="filter"
+                <input type="submit" className="substyle-inp" value="filter"
                     onClick={this.filterArray} 
                 />
-                {this.state.result}
+                
                 <br/>
-             </div>
+            </div>
+        </div>         
         );
       }
 }

@@ -2,27 +2,31 @@
     padding: 3vh ;
     font-family: "Vazir-Thin";
     width: 98%;
-    border: 1px solid gray;
+    color:rgba(178, 184, 184, 0.911) ;
+    border: 1px solid rgba(178, 184, 184, 0.911);
     /* border-radius:4px; */
     margin: 13px 0 0 0;
+    border-radius:4px;
 }
 .SearchArea{
-    background-color: rgb(211, 212, 212); 
-    
-    /* height:50vh ; */
+    background-color: rgb(226, 226, 226); 
     padding: 1em;
 }
 .Select{
     padding: 3vh ;
-    font-family: "Vazir-Thin";
+    font-family: "Vazir-bold";
+    color:rgba(178, 184, 184, 0.911) ;
     width: 98%;
-    border: 1px solid gray;
+    border: 1px solid rgba(178, 184, 184, 0.911);
     border-radius:4px;
     margin: 13px 0 0 0;
+    margin-bottom: 18px;
 }
 .Check{
     font-family: "Vazir-bold";
     font-size: medium;
+    color: rgb(202, 202, 202);
+    padding-right: 5px;
 }
 .Radiobt{
     display: block;
@@ -30,5 +34,6 @@
 .Radiobt label{
     padding-right: .5em;
     font-size: small; 
+    font-family: "vazir-bold";
 }
 
